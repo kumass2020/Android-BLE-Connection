@@ -8,6 +8,7 @@
     <!-- If your app targets Android 9 or lower, you can declare
          ACCESS_COARSE_LOCATION instead. -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <!--    BLE 지원하지 않는 기기에도 제공: false-->
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
@@ -19,7 +20,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_BLE_Connection">
-        <activity android:name=".MainActivity">
+        <activity android:name=".DeviceScanActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
